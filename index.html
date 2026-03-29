@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shashwat | Creative Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #0f172a, #1e293b);
+    background-size: 400% 400%;
+    animation: bgMove 10s infinite alternate;
+    color: white;
+    text-align: center;
+}
+
+@keyframes bgMove {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+header {
+    padding: 30px;
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+.section {
+    padding: 30px;
+}
+
+.card {
+    background: #1e293b;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    animation: fadeUp 1s ease;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Shashwat 🚀</h1>
+    <p>Video Editor 🎬 | Thumbnail Designer 🖼️ | Web Developer 💻</p>
+    <p><i>This Website is for showing you my creativity 😄✨</i></p>
+</header>
+
+<div class="section">
+    <h2>👋 About Me</h2>
+    <div class="card">
+        <p>I am a student and creative freelancer who loves editing videos, designing thumbnails, and building websites 🚀</p>
+        <img src="https://source.unsplash.com/200x200/?student">
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔥 My Skills</h2>
+    <div class="card">
+        <p>🎬 Video Editing</p>
+        <p>🖼️ Thumbnail Design</p>
+        <p>💻 Web Development</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🖼️ Project Gallery</h2>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/150x150/?video">
+        <img src="https://source.unsplash.com/150x150/?youtube">
+        <img src="https://source.unsplash.com/150x150/?design">
+        <img src="https://source.unsplash.com/150x150/?coding">
+    </div>
+</div>
+
+<div class="section">
+    <h2>🎁 Click Surprise</h2>
+    <button onclick="surprise()">Click Me 😏</button>
+</div>
+
+<footer>
+    <p>© 2026 Shashwat | Made with creativity 😎</p>
+</footer>
+
+<script>
+function surprise() {
+    document.body.style.background = "linear-gradient(to right, #22c55e, #38bdf8)";
+    alert("🔥 Boom! You unlocked premium creativity 😎🚀");
+}
+</script>
+
+</body>
+</html>
